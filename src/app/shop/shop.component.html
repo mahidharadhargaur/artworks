@@ -1,0 +1,21 @@
+<div class="shop-container">
+  <ng-container *ngFor="let item of shop">
+    <div class="product-container">
+      <div
+        class="photo-card"
+        [style.backgroundImage]="'url(' + item.backgroundImage + ')'"
+      ></div>
+      <div class="product-info">
+        <div class="name">
+          {{ item.name }}
+        </div>
+        <div class="info">
+          <div class="price">
+            {{ item.price | price }}
+          </div>
+          <div class="rating" rating >{{ item.rating }}</div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,31 @@
+.post-user-info {
+  display: flex;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.user-info {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+.user-img {
+  position: relative;
+  // display: inline-block;
+}
+.handle-id{
+  color: #8D8D8D;
+  font-size: 12px;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  .dot {
+    border-radius: 100%;
+    border: 2px solid black;
+  }
+}

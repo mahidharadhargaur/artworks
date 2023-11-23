@@ -1,0 +1,20 @@
+<nav class="main-side-nav">
+  <div class="nav">
+    <ul class="nav-list">
+      <ng-container *ngFor="let item of sideNavItems">
+        <li [class.active]="item.id === 10">
+          <img [src]="item.icon" alt="" />
+          {{ item.name }}
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+
+  <div class="logout-button">
+     <img [src]="'../assets/icons/logout.svg'" />
+    <a href="javascript:void" (click)="logout()" *ngIf="isLoggedIn$ | async"
+      >Logout</a
+    >
+    <a [routerLink]="'/login'" *ngIf="!(isLoggedIn$ | async)">Login</a>
+  </div>
+</nav>

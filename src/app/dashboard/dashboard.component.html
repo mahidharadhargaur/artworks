@@ -1,0 +1,36 @@
+<!-- <div class="main-dashboard">
+<app-post></app-post>
+</div> -->
+
+<main>
+  <div class="main-wrapper">
+    <div class="col-sides vertical-column">
+      <div class="main-logo bg-white block-radius">LOGO</div>
+      <app-side-nav class="bg-white block-radius"> </app-side-nav>
+    <div class="info">
+      <span>2022©logo name</span>
+      <span>Developed by Ivan Infotech</span>
+    </div>
+    </div>
+    <div class="col-mid vertical-column">
+      <app-header class="bg-white block-radius"></app-header>
+      <div class="post-container">
+        <ng-container *ngFor="let post of posts">
+          <app-post [post]="post"></app-post>
+        </ng-container>
+      </div>
+      <app-shop></app-shop>
+    </div>
+    <div class="col-sides vertical-column">
+      <button class="seller block-radius">Become a Seller</button>
+      <div class="artist">
+        <app-artist-container></app-artist-container>
+        <div class="terms">
+          <span>Privacy</span>
+          <span>Terms of Service</span>
+          <span>Cookie Notice</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,17 @@
+<div
+  class="photo-card"
+  [style.backgroundImage]="'url(' + item.backgroundImage + ')'"
+>
+  <div class="user-info">
+    <div class="user-img">
+      <img [src]="item.profilePhoto" alt="" />
+      <div class="green-dot"></div>
+    </div>
+    <div class="artist">
+      <div class="artist-name">
+        {{ item.name }}
+      </div>
+      <div class="handle-id">{{ "@" + item.handle }}</div>
+    </div>
+  </div>
+</div>

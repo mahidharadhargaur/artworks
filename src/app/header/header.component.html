@@ -1,0 +1,8 @@
+<ul class="header-list">
+    <ng-container *ngFor="let item of headerItems">
+      <li>
+        <img [src]="item.icon" alt="" /> 
+        {{ item.name }}
+      </li>
+    </ng-container>
+  </ul>

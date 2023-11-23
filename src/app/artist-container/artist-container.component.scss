@@ -1,0 +1,16 @@
+.artist-nav {
+  list-style: none;
+  display: flex;
+  text-align: left;
+  gap: 50px;
+  padding-left: 0;
+  font-size: 14px;
+}
+.photo-container {
+  width: 244px;
+  height: 126px;
+}
+.artists{
+  overflow-y: scroll;
+  height: 562px;
+}

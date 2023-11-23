@@ -1,0 +1,40 @@
+.shop-container {
+  display: flex;
+  gap: 20px;
+  max-width: 500px;
+  overflow-x: scroll;
+
+  .product-container {
+    .photo-card {
+      width: 250px;
+      height: 180px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      .name {
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+span {
+  background: url("../../assets/icons/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+// .filled {
+//   color: yellow;
+// }

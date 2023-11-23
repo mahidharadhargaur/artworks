@@ -1,0 +1,15 @@
+<div>
+  <div class="artist-con-nav">
+    <ul class="artist-nav">
+      <li>Artists</li>
+      <li>Photographers</li>
+    </ul>
+  </div>
+  <div class="artists">
+  <div class="photo-container">
+    <ng-container *ngFor="let item of artists">
+      <app-photo-card [item]="item"></app-photo-card>
+    </ng-container>
+  </div>
+  </div>
+</div>
